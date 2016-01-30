@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../stylesheets/buttons.css">
+    <link rel="stylesheet" href="../stylesheets/signUpMain.css">
+    <link rel="stylesheet" href="/app/assets/vendor-ea315b8001d07401b86b5f07e74c563c.css">
+</head>
+<body>
+<div class="error">
+    <header class="errorText" id="errorUsername">Username taken! You must choose a different username.</header>
+    <header id="success">User account created! Check you email to verify your account.</header>
+    <header class="errorText" id="errorEmail">A university email is required to sign up (.edu)</header>
+</div>
+<form id="form" method="post" action="signUp.html">
+    <h1>Sign Up</h1>
+    <fieldset>
+        <div>
+            <input type="text" id="username" name="username" required>
+            <label alt="Username" placeholder="Username (5 Characters)"></label>
+        </div>
+        <div>
+            <input type="email" id="email" name="email" required>
+            <label alt="Email" placeholder="Email (.edu)"></label>
+        </div>
+        <div>
+            <input type="password" id="password" name="password" required>
+            <label alt="Password" placeholder="Password (8 Characters)"></label>
+        </div>
+        <div>
+            <input type="password" id="confirmPassword" required>
+            <label alt="Confirm Password" placeholder="Confirm Password"></label>
+        </div>
+        <div><label>Already have an account? <a href="signIn.html" class="already"><b>Sign In</b></a> </label></div>
+    </fieldset>
+    <a href="#" id="signUpBig" class="button button-block button-rounded button-large">Sign Up</a>
+</form>
+<script src="https://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="../javascripts/signUp.js"></script>
+</body>
+</html>
